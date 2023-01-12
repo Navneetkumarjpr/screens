@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
 
+import './App.css';
+import Header from './components/Header';
+import Screen1 from './components/Screen1';
+
+import {Route,Switch} from "react-router-dom"
+import Screen2 from './components/Screen2';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+       <Header/>
+       <div className="container">
+       <Switch>
+         
+         <Route exact path='/friendsWhoEnrolled'><Screen2/></Route>
+         <Route exact path='/'><Screen1/></Route>
+       </Switch>
+       </div>
     </div>
   );
 }

@@ -1,0 +1,48 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 4rem;
+}
+.header_elements{
+    display: flex;
+}
+
+.profile_details{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #800080;
+}
+.head1{
+    font-family: 'Poppins', sans-serif;
+font-weight: 500;
+font-size: 18px;
+color: rgba(128, 0, 128, 0.25);
+margin-right: 1rem;
+}
+
+.head2{
+    font-family: 'Poppins', sans-serif;
+    color: #800080;
+font-weight: 500;
+font-size: 18px;
+text-align: center;
+margin: 0 0.3rem;
+}
+
+@media screen and (max-width: 750px) {
+    .head1{
+       display: none;
+    }
+    .account{
+        display: none;
+    }
+    .head2{
+        padding: 0.5rem 1rem;
+        background-color: #800080;
+        color: white;
+        border-radius: 20px;
+        text-align: center;
+    }
+  }
