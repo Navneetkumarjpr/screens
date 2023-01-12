@@ -13,7 +13,7 @@ function App() {
        <Switch>
          
          <Route exact path='/friendsWhoEnrolled'><Screen2/></Route>
-         <Route exact path='/'><Screen1/></Route>
+         <Route path='/'><Screen1/></Route> 
        </Switch>
        </div>
     </div>

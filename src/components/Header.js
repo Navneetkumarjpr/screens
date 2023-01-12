@@ -12,10 +12,12 @@ const Header = () => {
             <h2 className='head1'>Chat with Mentor</h2>
             <div className="profile_details">
                 <div className="account">
-
-                <AccountCircleIcon className='account_circle'/>
+                 <AccountCircleIcon className='account_circle'/>
                 </div>
-                <h2 className='head2'>ProfileName  <ExpandMoreIcon/></h2>
+                <div className="arrow">
+                <h2 className='head2'>ProfileName  </h2>
+                <ExpandMoreIcon/>
+                </div>
                 
             </div>
         </div>
